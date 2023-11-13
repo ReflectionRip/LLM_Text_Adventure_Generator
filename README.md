@@ -1,5 +1,5 @@
 # LLM_Text_Adventure_Generator
-LLM Text Adventure Generator
+An LLM Text Adventure Game and Generator to provide it's players with endless entertainment.
 
 ## Description
 This is a 'Text Adventure Game' and Generator. Designed to look and feel like the old text adventure games and MUDs. A scene is described, and the player enters their action.
