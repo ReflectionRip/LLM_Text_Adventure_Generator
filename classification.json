@@ -1,0 +1,19 @@
+{
+  "InputType": {
+    "prompt": "With:\n* World Info: {world}\n* Location Description: {scene}\n* Local Items: {items}\n* Local Actions: {actions}\n* Player Name: {name}\n* Player Description: {player}\n* Player Items: {inventory}\n\nClassify the following text adventure game 'input' into one of the following categories: 1. Using or interacting with an item they have or in the location. 2. Moving. 3. Trying to use a common command like quit, save. 4. Doing something not allowed.\n\nInput: {input}\nResponse:",
+    "responses": "1, 2, 3, 4"
+  },
+  "Action": {
+    "prompt": "With:\n* World Info: {world}\n* Location Description: {scene}\n* Local Items: {items}\n* Player Name: {name}\n* Player Description: {player}\n* Player Items: {inventory}\n\nClassify the following text adventure game 'input' into one of the Local Actions: {actions}, quit, save.\n\nInput: {input}\nResponse:",
+    "responses": "{actions}, quit, save"
+  },
+  "Moving": {
+    "prompt": "With:\n* World Info: {world}\n* Location Description: {scene}\n* Player Name: {name}\n* Player Description: {player}\n\nClassify the following text adventure game 'input' into one of the Valid Directions: {directions}.\n\nInput: {input}\nResponse:",
+    "responses": "{directions}"
+  },
+  "Use": "With:\n* World Info: {world}\n* Location Description: {scene}\n* Local Items: {items}\n* Local Actions: {actions}\n* Player Name: {name}\n* Player Description: {player}\n* Player Items: {inventory}\nInput: {input}\nDescribe the player trying to use an item:",
+  "NaturalRequest": "With:\n* World Info: {world}\n* Location Description: {scene}\n* Local Items: {items}\n* Local Actions: {actions}\n* Player Name: {name}\n* Player Description: {player}\n* Player Items: {inventory}\n\nRespond naturally to the following 'input'\n\nInput: {input}\nResponse:",
+  "InvalidDirection": "With:\n* World Info: {world}\n* Location Description: {scene}\n* Local Items: {items}\n* Local Actions: {actions}\n* Player Name: {name}\n* Player Description: {player}\n* Player Items: {inventory}\nInput: {input}\nDescribe the reason the player can't move:",
+  "InvalidCommand": "With:\n* World Info: {world}\n* Location Description: {scene}\n* Local Items: {items}\n* Local Actions: {actions}\n* Player Name: {name}\n* Player Description: {player}\n* Player Items: {inventory}\nInput: {input}\nThe player entered an invalid command:",
+  "Retry": "Please respond only with one of the following items: '{responses}'\n Response:"
+}
