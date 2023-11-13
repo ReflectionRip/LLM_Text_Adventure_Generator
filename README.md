@@ -20,6 +20,10 @@ I have three goals for this project.
 2. Gaming - Eventually have a game engine to play with.
 3. Provide - A building block, and/or game for others to develop on and play with.
 
+## Files
+* textRPG.py - The main game engine. This could possibly be broken up into multiple files, each with their own part of the game engine. But I am new to this, and didn't really put a full plan into place on the final structure. Eventually I may refactor this if it needs it.
+* classification.json - This has the LLM prompts to send to oobabooga (or eventually other GPTs). The name on this file probably should change. It was originally designed to hold my classifier that was processing my game engine 'commands'. But it has changed into holding all the formatted text to send to the LLM. The goal of this file is to seperate the game logic from the LLM requests. This way if another model is loaded that needs the requests formatted differently, it can easily be swapped out. Also it makes it easier to update the requests as needed to provide better, more accurate responses.
+
 ## Others
 While developing this code I eventually thought; I wonder if anyone else is making something simular. So here is a list of other LLM Text Adventure Games. I may eventually review these others for insperation if I get stuck, but I want to try to write this entirely on my own.
 
