@@ -15,5 +15,15 @@
   "NaturalRequest": "With:\n* World Info: {world}\n* Location Description: {scene}\n* Local Items: {items}\n* Local Actions: {actions}\n* Player Name: {name}\n* Player Description: {player}\n* Player Items: {inventory}\n\nRespond naturally to the following 'input'\n\nInput: {input}\nResponse:",
   "InvalidDirection": "With:\n* World Info: {world}\n* Location Description: {scene}\n* Local Items: {items}\n* Local Actions: {actions}\n* Player Name: {name}\n* Player Description: {player}\n* Player Items: {inventory}\nInput: {input}\nDescribe the reason the player can't move:",
   "InvalidCommand": "With:\n* World Info: {world}\n* Location Description: {scene}\n* Local Items: {items}\n* Local Actions: {actions}\n* Player Name: {name}\n* Player Description: {player}\n* Player Items: {inventory}\nInput: {input}\nThe player entered an invalid command:",
-  "Retry": "Please respond only with one of the following items: '{responses}'\n Response:"
+  "Retry": "Please respond only with one of the following items: '{responses}'\n Response:",
+  "NewWorld": "<|system|>A world describer.\n<|user|>In one paragraph create a game world overview using the following settings: {input}. This should only be an overview and not include anything about the players, gameplay, or mechanics.\n<|model|>",
+  "SceneTitle": "<|system|>A location title generator.\n<|user|>Description: {scene}\n\nGiven the room, location, or area description, make a short one line title that best describes it.<|model|>",
+  "NewScene": "<|system|>{world}\n<|user|>Guidance: {input}\n\nUsing the guidance create an appropriate room or location description. Tell me what the scene looks like.<|model|>",
+  "SceneDirections": "<|system|> Valid Directions: North, South, East, West, North East, North West, South East, South West, Up, Down<|user|> {scene}\n\nList the directions a person can move from here.\nRespond with:\nExits: [directions]\n<|model|>",
+  "SceneActions": "<|system|>A user action generator. Lists actions as a comma separated list. Keeps the actions short.\n<|user|>You are in your bed room. Your history book is on your desk.\n\nMake a comma separated list of actions that a person could do while in this location.\n<|model|> Open Window, Sit down at the Desk, Open Closet, Sleep on Bed, Turn Off Lights, Write in Notebook, Search Desk Drawers\n<|user|> At the park, near a playground.\n\nMake a comma separated list of actions that a person could do while in this location.\n<|model|> Play on Swings, Use Slide, Climb on Monkey Bars, Ride Merry-Go-Round, Walk on Trail, Rest on Bench, Watch Children Playing, Drink Water from Fountain, Sit on Grass, Lie Down and Look at Sky, Pick Up Trash, Read Signs, Enter Bathroom\n<|user|> {scene}\n\nMake a comma separated list of actions that a person could do while in this location.\n<|model|>",
+  "SceneItems": [
+    "<|system|> {scene} <|user|> Are there any portable objects described in this scene? <|model|>",
+    "<|user|> List the portable objects with ',' <|model|>"
+  ],
+  "NewCharacter": "<|system|>A person describer.\n<|user|>World: {world}\nGuidance: {input}\n\nUsing the world and guidance create an appropriate character description for {name} in one paragraph.\n<|model|>"
 }
