@@ -33,7 +33,7 @@ This is a general list of goals. I will probably add to it as new goals are disc
 * Streamed output - When generating LLM responses, the outputs will take time to generate. Stream the outputs from the LLM. When loading pre-generated outputs (already generated scenes, inventories, etc) the outout will be nearly instantaneous. Implement a streaming system for loaded outputs. \[Enable/Disable\] 
 * Stable Diffusion - Text to Image - Generation for scenes / items. \[Enable/Disable\]
 * TTS - Text to Speach - Allow the users to listen instead of read. \[Enable/Disable\]
-* STT? - Speach to Text - Allow the users to talk instead of type. \[Enable/Disabme\]
+* STT? - Speach to Text - Allow the users to talk instead of type. \[Enable/Disable\]
 * \[_Stretch Goal_\] Multi-user support - MUD - Allow multiple players in one game session. \[Optional\]
 * \[_Stretch Goal_\] Database? - This will probably be needed if MUD support is implemented.
 
