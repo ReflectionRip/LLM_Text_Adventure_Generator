@@ -4,7 +4,7 @@ An LLM Text Adventure Game and Generator to provide it's players with endless en
 ## Description
 This is a 'Text Adventure Game' and Generator. Designed to look and feel like the old text adventure games and MUDs. A scene is described, and the player enters their action.
 
-Behind the game is an LLM communication system currently designed to work with 'oobabooga' [https://github.com/oobabooga/text-generation-webui]. It will:
+Behind the game is an LLM communication system currently designed to work with 'oobabooga' [oobabooga Text generation web UI](https://github.com/oobabooga/text-generation-webui). It will:
 1. Take the users input, which can be natural or gamified.
 2. Check it against a list of possible actions.
 3. Process the action if it is a valid game action.
@@ -43,5 +43,5 @@ This is a general list of goals. I will probably add to it as new goals are disc
 While developing this code I eventually thought; I wonder if anyone else is making something simular. So here is a list of other LLM Text Adventure Games. I may eventually review these others for insperation if I get stuck, but I want to try to write this entirely on my own.
 
 If you are making your own and want me to link it here feel free make a comment with the path to the game. I will add it to this list. Or notify me if you want it removed from this list:
-* AdventureGPT: [https://github.com/oaguy1/AdventureGPT]
-* GPT Adventure Game Engine: [https://github.com/nferraz/gpt-adventures]
+* [oaguy1 AdventureGPT](https://github.com/oaguy1/AdventureGPT)
+* [nferraz GPT Adventure Game Engine](https://github.com/nferraz/gpt-adventures)
