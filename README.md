@@ -4,7 +4,7 @@ An LLM Text Adventure Game and Generator to provide it's players with endless en
 ## Description
 This is a 'Text Adventure Game' and Generator. Designed to look and feel like the old text adventure games and MUDs. A scene is described, and the player enters their action.
 
-Behind the game is an LLM communication system currently designed to work with 'oobabooga' [oobabooga Text generation web UI](https://github.com/oobabooga/text-generation-webui). It will:
+Behind the game is an LLM communication system currently designed to work with [oobabooga Text generation web UI](https://github.com/oobabooga/text-generation-webui). It will:
 1. Take the users input, which can be natural or gamified.
 2. Check it against a list of possible actions.
 3. Process the action if it is a valid game action.
